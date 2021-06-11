@@ -1,0 +1,666 @@
+local Finity = loadstring(game:HttpGet("https://pastebin.com/raw/y4eeFHp0"))()
+
+local FinityWindow = Finity.new(true) 
+FinityWindow.ChangeToggleKey(Enum.KeyCode.T)
+
+local Rage = FinityWindow:Category("Main Functions")
+
+local Sas = FinityWindow:Category("Player Functions")
+
+local Autofarm = FinityWindow:Category("OP Autofarm")
+
+local OtherMods = FinityWindow:Category("Other Mods")
+
+local dad = FinityWindow:Category("Credits")
+
+local op = Autofarm:Sector("Autofarm")
+
+local Mods = Sas:Sector("PlayerMods")
+
+local features = Rage:Sector("Features")
+
+local is = OtherMods:Sector("Special Mods")
+
+local daad = dad:Sector("Credits")
+
+game.StarterGui:SetCore("SendNotification", {
+	Title = "BloxFruit"; 
+	Text = "Loaded!";
+	Icon = "http://www.roblox.com/asset/?id=6912163778"; 
+	Duration = 5; 
+})
+
+
+features:Cheat("Button", "Pick All Fruits",function()
+    for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+    if v:IsA("Tool") then
+        game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.Handle.CFrame
+    end
+    end
+end)
+
+features:Cheat("Label", "If you need to lag the server, toggle the notifications or it will lag your screen!")
+
+features:Cheat("Button", "Toggle Notifications", function()
+    game.Players.LocalPlayer.PlayerGui.Notifications:Destroy()
+end)
+    
+
+features:Cheat("Button", "Lag Server", function()
+    while true do   
+local string_1 = "BuyBoat";
+local string_2 = "Dinghy";
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2);
+wait()
+end
+end)
+
+features:Cheat("Button", "AntiGlitchFix", function()
+    game.Players.LocalPlayer.Character["Chop Glitch Fix"]:Destroy()
+    wait(.1)
+    game:GetService("StarterPlayer").StarterCharacterScripts["Chop Glitch Fix"]:Destroy()
+end)
+
+features:Cheat("Button", "Anticheat bypass", function()
+    game.Players.LocalPlayer["Fling and Underwater Glitching Fix"]:Destroy()
+    wait(.1)
+    game:GetService("StarterPlayer").StarterCharacterScripts["Fling and Underwater Glitching Fix"]:Destroy()
+end)
+
+features:Cheat("Button", "Moon vision", function()
+    game:GetService("Lighting").FantasySky:Destroy()
+end)
+
+features:Cheat("Button", "FullBrightness", function()
+    game:GetService("Lighting").Brightness = 2
+	game:GetService("Lighting").FogEnd = 100000
+	game:GetService("Lighting").GlobalShadows = false
+	game:GetService("Lighting").OutdoorAmbient = Color3.fromRGB(128, 128, 128)
+end)
+
+features:Cheat("Label", "Teleports")
+
+features:Cheat("Button", "Pirate Village", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1204.24341, 6.6000061, 4016.54663, -0.258864403, 0, -0.965913713, 0, 1, 0, 0.965913713, 0, -0.258864403)
+end)
+
+features:Cheat("Button", "Magma Village", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5194.32715, 2.299560547, 8508.87012, -2.06232071e-05, 0.866040051, -0.499974549, 0.99999994, 2.06232071e-05, -5.5283308e-06, 5.5283308e-06, -0.499974549, -0.866039991)
+end)
+
+features:Cheat("Button", "Marine Fortress", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-5018.82861, 23, 4325.17139, -0.422592998, 0, 0.906319618, 0, 1, 0, -0.906319618, 0, -0.422592998)
+end)
+
+features:Cheat("Button", "Desert", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(910.373657, -2.346827, 4142.12842, -4.26769257e-05, 0.906304121, 0.422626197, -1, -4.26769257e-05, -9.46223736e-06, 9.46223736e-06, -0.422626197, 0.906304121)
+end)
+
+features:Cheat("Button", "Fountain City", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(5256.58105, 38.8136978, 4084.26465, -0.350708365, -0.656062186, 0.668270886, 0.885469377, 3.69548798e-06, 0.464697659, -0.30487299, 0.7547068, 0.580921769)
+end)
+
+features:Cheat("Button", "Prison", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(4851.41357, -6.99998379, 734.505249, 0.0348294377, 0.999393463, 3.84747982e-05, -3.84747982e-05, 3.96966934e-05, -1.00000024, -0.999393463, 0.0348296463, 3.96966934e-05)
+end)
+
+features:Cheat("Button", "Frozen Village", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1102.87744, 1.11113, -1146.6886, -0.5250175, 0, -0.851091862, 0, 1, 0, 0.851091862, 0, -0.5250175)
+end)
+
+features:Cheat("Button", "The Colosseum", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1437.47827, 3.70703888, -2812.54565, -0.438346624, 0, 0.898806036, 0, 1, 0, -0.898806036, 0, -0.438346624)
+end)
+
+features:Cheat("Button", "Jungle", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1440.10535, 58.6999283, -16.6648254, -0.866007447, 0, -0.500031412, 0, 1, 0, 0.500031412, 0, -0.866007447)
+end)
+
+features:Cheat("Button", "Middle Town", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-489.379486, -4.49983597, 1476.22119, -0.965929747, 0, -0.258804798, 0, 1, 0, 0.258804798, 0, -0.965929747)
+end)
+
+features:Cheat("Button", "Island of Trainees", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2699.16895, 23.7687912, 2112.78198, 9.41753387e-06, -0.0523886383, 0.998626828, -1, -9.41753387e-06, 8.91089439e-06, 8.91089439e-06, -0.998626828, -0.0523886681)
+end)
+
+features:Cheat("Button", "Main Island", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(821.955811, 3.54012096, 1453.18042, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+features:Cheat("Button", "SkyLands", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4556.31934, 829.411987, -1773.78088, -0.12190187, 0, 0.992542267, 0, 1, 0, -0.992542267, 0, -0.12190187)
+end)
+
+Mods:Cheat("Label", "This can be useful for moving yourself")
+
+Mods:Cheat("Button", "Mod Your Abilities", function()
+for i,v in pairs(game:GetService("Players").LocalPlayer.Backpack:GetDescendants()) do
+if v:IsA("ModuleScript") then
+local gun = require(v)
+gun.Lvl.X = 0
+gun.Lvl.Z = 0 
+gun.Lvl.C = 0 
+gun.Lvl.V = 0 
+gun.Lvl.F = 0 
+wait(.1)
+gun.Cooldown.X = 0
+gun.Cooldown.Z = 0
+gun.Cooldown.C = 0
+gun.Cooldown.V = 0
+gun.Cooldown.F = 0
+wait(.1)
+gun.Cap = 1525
+wait(.1)
+gun.Cost.X = 0 
+gun.Cost.Z = 0
+gun.Cost.C = 0
+gun.Cost.V = 0
+gun.Cost.F = 0
+end
+end
+end)
+
+local Toggles1 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Mod Walkspeed", function(t)
+    Toggles1.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles1.Loop == true then 
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 70 
+end 
+end
+end)
+
+local Toggles2 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Auto Meele points", function(t)
+    Toggles2.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles2.Loop == true then 
+local string_1 = "AddPoint";
+local string_2 = "Melee";
+local number_1 = 1;
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2, number_1);
+end 
+end
+end)
+
+local Toggles3 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Auto Defense points", function(t)
+    Toggles3.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles3.Loop == true then 
+local string_1 = "AddPoint";
+local string_2 = "Defense";
+local number_1 = 1;
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2, number_1);
+end 
+end
+end)
+
+local Toggles4 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Auto Sword points", function(t)
+    Toggles4.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles4.Loop == true then 
+local string_1 = "AddPoint";
+local string_2 = "Sword";
+local number_1 = 1;
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2, number_1);
+end 
+end
+end)
+
+local Toggles5 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Auto Gun points", function(t)
+    Toggles5.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles5.Loop == true then 
+local string_1 = "AddPoint";
+local string_2 = "Gun";
+local number_1 = 1;
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2, number_1);
+end 
+end
+end)
+
+local Toggles6 = {
+    Loop = false 
+}
+
+Mods:Cheat("Toggle", "Auto Demon Fruit points", function(t)
+    Toggles6.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles6.Loop == true then 
+local string_1 = "AddPoint";
+local string_2 = "Demon Fruit";
+local number_1 = 1;
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2, number_1);
+end 
+end
+end)
+
+local Toggles = {
+    Loop = false 
+}
+
+op:Cheat("Toggle", "Chest Autopicker(50k per server)", function(t)
+    Toggles.Loop = t 
+end) 
+
+spawn(function()
+    while true do wait(0.001)
+        if Toggles.Loop == true then 
+            for i,v in pairs(game:GetService("Workspace"):GetChildren()) do
+    if v:IsA("Part") then
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.CFrame
+end
+end
+end
+end
+end)
+
+op:Cheat("Label", "You could go in water after runned the toggle!")
+
+op:Cheat("Button", "Teleport to main island", function()
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1176.78259, 5.23363304, 1326.02393, 0, 0, -1, 0, 1, 0, 1, 0, 0)
+end)
+
+op:Cheat("Label", "If you spam this remotes to change the team, you'll create SS clones, unique feature")
+
+op:Cheat("Button", "SetTeamToPirates", function()
+    local string_1 = "SetTeam";
+local string_2 = "Pirates";
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2);
+end)
+
+op:Cheat("Button", "SetTeamToMarines", function()
+    local string_1 = "SetTeam";
+local string_2 = "Marines";
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2);
+end)
+
+op:Cheat("Label", "Note: you need to execute it not for once, but each time you kill tot mobs"
+
+)op:Cheat("Button", "Universal Magnet Autofarm", function()
+    game:GetService('RunService').Stepped:Connect(function()
+                                        setsimulationradius(1e308, 1/0)
+    end)
+    for _,part in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+				if game.Players.LocalPlayer.Character:FindFirstChild('Head') and part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and not part:IsDescendantOf(game.Players.LocalPlayer.Character) and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then
+					local ForceInstance = Instance.new("BodyPosition")
+					for i,c in pairs(part:GetChildren()) do
+						if c:IsA("BodyPosition") or c:IsA("BodyGyro") then
+							c:Destroy()
+						end
+					end
+					ForceInstance.Parent = part
+					ForceInstance.MaxForce = Vector3.new(math.huge, math.huge, math.huge
+                    )ForceInstance.Position = game.Players.LocalPlayer.Character.Head.Position
+                    for i,v in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = v.HumanoidRootPart.CFrame + Vector3.new(3, 3, 3)
+                    for _,part in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+                     part.HumanoidRootPart.Size = Vector3.new(25, 25, 25)
+                      part.HumanoidRootPart.Transparency = 0.60
+                  part.HumanoidRootPart.CanCollide = false
+       end
+end
+end
+end
+end
+)
+
+op:Cheat("Label", "Note: the universal magnet could be used with the enemies hitbox expander!", function()
+end)
+
+local Toggles14 = {
+    Loop = false 
+}
+
+
+op:Cheat("Button", "ToggleAutofarm", function()
+    for _,part in pairs(game:GetService("Workspace").Enemies:GetDescendants()) do
+				if game.Players.LocalPlayer.Character:FindFirstChild('Head') and part:IsA("BasePart" or "UnionOperation" or "Model") and part.Anchored == false and not part:IsDescendantOf(game.Players.LocalPlayer.Character) and part.Name == "Torso" == false and part.Name == "Head" == false and part.Name == "Right Arm" == false and part.Name == "Left Arm" == false and part.Name == "Right Leg" == false and part.Name == "Left Leg" == false and part.Name == "HumanoidRootPart" == false then
+					local ForceInstance = Instance.new("BodyPosition")
+					for i,c in pairs(part:GetChildren()) do
+						if c:IsA("BodyPosition") or c:IsA("BodyGyro") then
+							c:Destroy()
+						end
+					end
+				end
+				end
+end)
+
+op:Cheat("Button", "Wreck Server", function()
+while true do
+local string_1 = "SetTeam";
+local string_2 = "Pirates";
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1, string_2);
+wait()
+end
+end)
+
+
+op:Cheat("Button", "EnemiesHitBoxes", function()
+    for _,part in pairs(game:GetService("Workspace").Enemies:GetChildren()) do
+    part.HumanoidRootPart.Size = Vector3.new(30, 30, 30)
+    part.HumanoidRootPart.Transparency = 0.60
+    part.HumanoidRootPart.CanCollide = false
+    end
+end)
+
+op:Cheat("Button", "PlayersHitBoxes", function()
+    for _,part in pairs(game:GetService("Players"):GetChildren()) do
+    if part.Name ~= game.Players.LocalPlayer.Name then 
+    part.Character.HumanoidRootPart.Size = Vector3.new(40, 40, 40)
+    part.Character.HumanoidRootPart.Transparency = 0.60
+    part.Character.HumanoidRootPart.CanCollide = false
+    end
+    end
+end)
+
+op:Cheat("Dropdown", "ChooseQuest", function(Option)
+if Option == "BanditQuest1" then 
+local A_1 = "StartQuest"
+local A_2 = "BanditQuest1"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "JungleQuest" then
+local A_1 = "StartQuest"
+local A_2 = "JungleQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "MarineQuest" then
+local A_1 = "StartQuest"
+local A_2 = "MarineQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "MarineQuest1" then
+local A_1 = "StartQuest"
+local A_2 = "MarineQuest1"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "MarineQuest2" then
+local A_1 = "StartQuest"
+local A_2 = "MarineQuest2"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "MarineQuest3" then
+local A_1 = "StartQuest"
+local A_2 = "MarineQuest3"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "SkyQuest" then
+local A_1 = "StartQuest"
+local A_2 = "SkyQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "Area1Quest" then
+local A_1 = "StartQuest"
+local A_2 = "Area1Quest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "Area2Quest" then
+local A_1 = "StartQuest"
+local A_2 = "Area2Quest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "IceSideQuest" then
+local A_1 = "StartQuest"
+local A_2 = "IceSideQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ShipQuest1" then
+local A_1 = "StartQuest"
+local A_2 = "ShipQuest1"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ShipQuest2" then
+local A_1 = "StartQuest"
+local A_2 = "ShipQuest2"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "MagmaQuest" then
+local A_1 = "StartQuest"
+local A_2 = "MagmaQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "FrostQuest" then
+local A_1 = "StartQuest"
+local A_2 = "FrostQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ColosseumQuest" then
+local A_1 = "StartQuest"
+local A_2 = "ColosseumQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ImpelQuest" then
+local A_1 = "StartQuest"
+local A_2 = "ImpelQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "FishmanQuest" then
+local A_1 = "StartQuest"
+local A_2 = "FishmanQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "SkyExp1Quest" then
+local A_1 = "StartQuest"
+local A_2 = "SkyExp1Quest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "SkyExp2Quest" then
+local A_1 = "StartQuest"
+local A_2 = "SkyExp2Quest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ForgottenQuest" then
+local A_1 = "StartQuest"
+local A_2 = "ForgottenQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "DesertQuest" then
+local A_1 = "StartQuest"
+local A_2 = "DesertQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "FountainQuest" then
+local A_1 = "StartQuest"
+local A_2 = "FountainQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "BuggyQuest1" then
+local A_1 = "StartQuest"
+local A_2 = "BuggyQuest1"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "ZombieQuest" then
+local A_1 = "StartQuest"
+local A_2 = "ZombieQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "BartiloQuest" then
+local A_1 = "StartQuest"
+local A_2 = "BartiloQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+elseif Option == "SnowMountainQuest" then
+local A_1 = "StartQuest"
+local A_2 = "SnowMountainQuest"
+local A_3 = 1
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2, A_3)
+end
+end, {
+options = {
+"BanditQuest1",
+"JungleQuest",
+"MarineQuest",
+"MarineQuest2",
+"FountainQuest",
+"DesertQuest",
+"IceSideQuest",
+"ColosseumQuest",
+"SkyExp2Quest",
+"BuggyQuest1",
+"FireSideQuest",
+"FrostQuest",
+"FishmanQuest",
+"ImpelQuest",
+"MarineQuest3",
+"BartiloQuest",
+"SnowMountainQuest",
+"MagmaQuest",
+"ShipQuest1",
+"ShipQuest2",
+"ForgottenQuest",
+"Area2Quest",
+"Area1Quest",
+"ZombieQuest",
+"SkyQuest"
+}
+})
+
+
+
+op:Cheat("Button", "AbandonQuest", function()
+local string_1 = "AbandonQuest";
+local Target = game:GetService("ReplicatedStorage").Remotes["CommF_"];
+Target:InvokeServer(string_1);
+end)
+
+
+is:Cheat("Button", "EnablePVP", function()
+local A_1 = "EnablePvp"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1)
+end)
+
+is:Cheat("Button", "Buy Pipe (100k coins needed)", function() 
+local A_1 = "BuyItem"
+local A_2 = "Pipe"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2)
+end)
+
+
+is:Cheat("Button", "SetSpawnPoint", function()
+local A_1 = "SetSpawnPoint"
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1)
+end)
+
+is:Cheat("Label", "Note: With all tools equipped, you can punch and use your abilities"
+
+)is:Cheat("Button", "EquipTools", function()
+for i,v in pairs(game.Players.LocalPlayer:FindFirstChildOfClass("Backpack"):GetChildren()) do
+		if v:IsA("Tool") or v:IsA("HopperBin") then
+			v.Parent = game.Players.LocalPlayer.Character
+		end
+	end
+end)
+
+
+is:Cheat("Button", "GrabTools", function()
+local Human = game:GetService("Players").Character:FindFirstChildWhichIsA("Humanoid")
+	for _, v in ipairs(game:GetService("Workspace"):GetChildren()) do
+		if game:GetService("Players").LocalPlayer.Character and v:IsA("BackpackItem") and v:FindFirstChild("Handle") then
+			Human:EquipTool(v)
+		end
+	end
+end)
+
+is:Cheat("Button", "RejoinServer", function()
+local tpservice= game:GetService("TeleportService")
+local plr = game.Players.LocalPlayer
+
+tpservice:Teleport(2753915549, plr)
+end)
+
+is:Cheat("Button", "RequestAllyAll", function()
+for _, v in ipairs(game:GetService("Players"):GetChildren()) do
+local A_1 = "InviteAlly"
+local A_2 = v.Name
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2)
+end
+end)
+
+is:Cheat("Button", "RemoveAllies", function()
+for _, v in ipairs(game:GetService("Players"):GetChildren()) do
+local A_1 = "RemoveAlly"
+local A_2 = v.Name
+local Event = game:GetService("ReplicatedStorage").Remotes["CommF_"]
+Event:InvokeServer(A_1, A_2)
+end
+end)
+
+daad:Cheat("Label", "Credits for the gui and scripts: C00lKid1x1x1x1JohnDoe#3504", function()
+end)
